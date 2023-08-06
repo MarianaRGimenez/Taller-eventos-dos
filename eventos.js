@@ -1,6 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const divElement = document.getElementById('boton');
-    divElement.addEventListener('click', function () {
-        alert('Hola! Soy el div');
-    })
-})
+document.querySelector('div').addEventListener(click, saludarDiv);
+function saludarBoton() {
+    alert("Hola")
+    event.stopPropagation();
+}
+function saludarDiv() {
+    alert("Hola! Soy el div");
+}
+
